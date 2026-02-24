@@ -1,0 +1,142 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mit Pracht Alpha verbinden",
+        "description": "Richte deine Pracht Alpha Wallbox ein.",
+        "data": {
+          "host": "Host",
+          "password": "Passwort"
+        }
+      },
+      "zeroconf_confirm": {
+        "title": "Pracht Alpha gefunden",
+        "description": "Eine Pracht Alpha Wallbox wurde unter {host} ({hostname}) gefunden. Gib das Passwort ein, um die Einrichtung abzuschließen.",
+        "data": {
+          "password": "Passwort"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Pracht Alpha erneut authentifizieren",
+        "description": "Die Authentifizierung deiner Pracht Alpha Wallbox ist abgelaufen. Bitte gib das neue Passwort ein.",
+        "data": {
+          "password": "Passwort"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung zur Wallbox fehlgeschlagen",
+      "invalid_auth": "Ungültiges Passwort",
+      "unknown": "Unerwarteter Fehler"
+    },
+    "abort": {
+      "already_configured": "Diese Wallbox ist bereits konfiguriert",
+      "reauth_successful": "Erneute Authentifizierung war erfolgreich"
+    }
+  },
+  "exceptions": {
+    "authentication_error": {
+      "message": "Authentifizierung mit der Pracht Alpha Wallbox fehlgeschlagen"
+    },
+    "communication_error": {
+      "message": "Kommunikationsfehler mit der Pracht Alpha Wallbox: {error}"
+    },
+    "unknown_error": {
+      "message": "Unbekannter Fehler bei der Kommunikation mit der Pracht Alpha Wallbox: {error}"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "power_car1": {
+        "name": "Leistung links"
+      },
+      "power_car2": {
+        "name": "Leistung rechts"
+      },
+      "current_car1": {
+        "name": "Strom links"
+      },
+      "current_car2": {
+        "name": "Strom rechts"
+      },
+      "status_car1": {
+        "name": "Status links",
+        "state": {
+          "disconnected": "Getrennt",
+          "connected": "Verbunden",
+          "charging": "Laden",
+          "charging_with_cooling": "Laden mit Kühlung",
+          "error": "Fehler"
+        }
+      },
+      "status_car2": {
+        "name": "Status rechts",
+        "state": {
+          "disconnected": "Getrennt",
+          "connected": "Verbunden",
+          "charging": "Laden",
+          "charging_with_cooling": "Laden mit Kühlung",
+          "error": "Fehler"
+        }
+      },
+      "comm_pcb_temperature": {
+        "name": "Kommunikationsplatine Temperatur"
+      },
+      "box_temperature": {
+        "name": "Gehäusetemperatur"
+      },
+      "uptime": {
+        "name": "Betriebszeit"
+      },
+      "energy_car1": {
+        "name": "Energie links"
+      },
+      "energy_car2": {
+        "name": "Energie rechts"
+      }
+    },
+    "binary_sensor": {
+      "car1_connected": {
+        "name": "Verbunden links"
+      },
+      "car2_connected": {
+        "name": "Verbunden rechts"
+      },
+      "car1_charging": {
+        "name": "Laden links"
+      },
+      "car2_charging": {
+        "name": "Laden rechts"
+      }
+    },
+    "number": {
+      "max_current_total": {
+        "name": "Maximaler Strom gesamt"
+      },
+      "max_current_car1": {
+        "name": "Maximaler Strom links"
+      },
+      "max_current_car2": {
+        "name": "Maximaler Strom rechts"
+      }
+    },
+    "switch": {
+      "lock_side1": {
+        "name": "Station links sperren"
+      },
+      "lock_side2": {
+        "name": "Station rechts sperren"
+      }
+    },
+    "select": {
+      "led_mode": {
+        "name": "LED-Modus",
+        "state": {
+          "on": "Ein",
+          "on_if_required": "Ein bei Bedarf",
+          "off": "Aus"
+        }
+      }
+    }
+  }
+}

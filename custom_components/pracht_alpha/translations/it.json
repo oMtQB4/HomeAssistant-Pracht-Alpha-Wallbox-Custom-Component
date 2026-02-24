@@ -1,0 +1,142 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connetti a Pracht Alpha",
+        "description": "Configura la tua wallbox Pracht Alpha.",
+        "data": {
+          "host": "Host",
+          "password": "Password"
+        }
+      },
+      "zeroconf_confirm": {
+        "title": "Pracht Alpha scoperto",
+        "description": "È stato scoperto un wallbox Pracht Alpha su {host} ({hostname}). Inserisci la password per completare la configurazione.",
+        "data": {
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Riautenticazione Pracht Alpha",
+        "description": "L'autenticazione della tua wallbox Pracht Alpha è scaduta. Inserisci la nuova password.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossibile connettersi al wallbox",
+      "invalid_auth": "Password non valida",
+      "unknown": "Errore imprevisto"
+    },
+    "abort": {
+      "already_configured": "Questo wallbox è già configurato",
+      "reauth_successful": "La riautenticazione è riuscita"
+    }
+  },
+  "exceptions": {
+    "authentication_error": {
+      "message": "Autenticazione fallita con il wallbox Pracht Alpha"
+    },
+    "communication_error": {
+      "message": "Errore di comunicazione con il wallbox Pracht Alpha: {error}"
+    },
+    "unknown_error": {
+      "message": "Errore sconosciuto nella comunicazione con il wallbox Pracht Alpha: {error}"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "power_car1": {
+        "name": "Potenza sinistra"
+      },
+      "power_car2": {
+        "name": "Potenza destra"
+      },
+      "current_car1": {
+        "name": "Corrente sinistra"
+      },
+      "current_car2": {
+        "name": "Corrente destra"
+      },
+      "status_car1": {
+        "name": "Stato sinistra",
+        "state": {
+          "disconnected": "Disconnesso",
+          "connected": "Connesso",
+          "charging": "In carica",
+          "charging_with_cooling": "In carica con raffreddamento",
+          "error": "Errore"
+        }
+      },
+      "status_car2": {
+        "name": "Stato destra",
+        "state": {
+          "disconnected": "Disconnesso",
+          "connected": "Connesso",
+          "charging": "In carica",
+          "charging_with_cooling": "In carica con raffreddamento",
+          "error": "Errore"
+        }
+      },
+      "comm_pcb_temperature": {
+        "name": "Temperatura scheda di comunicazione"
+      },
+      "box_temperature": {
+        "name": "Temperatura dell'involucro"
+      },
+      "uptime": {
+        "name": "Tempo di attività"
+      },
+      "energy_car1": {
+        "name": "Energia sinistra"
+      },
+      "energy_car2": {
+        "name": "Energia destra"
+      }
+    },
+    "binary_sensor": {
+      "car1_connected": {
+        "name": "Connesso sinistra"
+      },
+      "car2_connected": {
+        "name": "Connesso destra"
+      },
+      "car1_charging": {
+        "name": "In carica sinistra"
+      },
+      "car2_charging": {
+        "name": "In carica destra"
+      }
+    },
+    "number": {
+      "max_current_total": {
+        "name": "Corrente max totale"
+      },
+      "max_current_car1": {
+        "name": "Corrente max sinistra"
+      },
+      "max_current_car2": {
+        "name": "Corrente max destra"
+      }
+    },
+    "switch": {
+      "lock_side1": {
+        "name": "Blocca stazione sinistra"
+      },
+      "lock_side2": {
+        "name": "Blocca stazione destra"
+      }
+    },
+    "select": {
+      "led_mode": {
+        "name": "Modalità LED",
+        "state": {
+          "on": "Acceso",
+          "on_if_required": "Acceso se necessario",
+          "off": "Spento"
+        }
+      }
+    }
+  }
+}

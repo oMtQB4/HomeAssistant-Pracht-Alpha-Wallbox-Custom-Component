@@ -1,0 +1,142 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion à Pracht Alpha",
+        "description": "Configurez votre wallbox Pracht Alpha.",
+        "data": {
+          "host": "Hôte",
+          "password": "Mot de passe"
+        }
+      },
+      "zeroconf_confirm": {
+        "title": "Pracht Alpha découvert",
+        "description": "Un wallbox Pracht Alpha a été découvert à {host} ({hostname}). Entrez le mot de passe pour terminer la configuration.",
+        "data": {
+          "password": "Mot de passe"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Réauthentifier Pracht Alpha",
+        "description": "L'authentification de votre wallbox Pracht Alpha a expiré. Veuillez entrer le nouveau mot de passe.",
+        "data": {
+          "password": "Mot de passe"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de se connecter au wallbox",
+      "invalid_auth": "Mot de passe invalide",
+      "unknown": "Erreur inattendue"
+    },
+    "abort": {
+      "already_configured": "Ce wallbox est déjà configuré",
+      "reauth_successful": "La réauthentification a réussi"
+    }
+  },
+  "exceptions": {
+    "authentication_error": {
+      "message": "Échec de l'authentification avec le wallbox Pracht Alpha"
+    },
+    "communication_error": {
+      "message": "Erreur de communication avec le wallbox Pracht Alpha : {error}"
+    },
+    "unknown_error": {
+      "message": "Erreur inconnue lors de la communication avec le wallbox Pracht Alpha : {error}"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "power_car1": {
+        "name": "Puissance gauche"
+      },
+      "power_car2": {
+        "name": "Puissance droite"
+      },
+      "current_car1": {
+        "name": "Courant gauche"
+      },
+      "current_car2": {
+        "name": "Courant droit"
+      },
+      "status_car1": {
+        "name": "État gauche",
+        "state": {
+          "disconnected": "Déconnecté",
+          "connected": "Connecté",
+          "charging": "En charge",
+          "charging_with_cooling": "En charge avec refroidissement",
+          "error": "Erreur"
+        }
+      },
+      "status_car2": {
+        "name": "État droit",
+        "state": {
+          "disconnected": "Déconnecté",
+          "connected": "Connecté",
+          "charging": "En charge",
+          "charging_with_cooling": "En charge avec refroidissement",
+          "error": "Erreur"
+        }
+      },
+      "comm_pcb_temperature": {
+        "name": "Température carte de communication"
+      },
+      "box_temperature": {
+        "name": "Température du boîtier"
+      },
+      "uptime": {
+        "name": "Temps de fonctionnement"
+      },
+      "energy_car1": {
+        "name": "Énergie gauche"
+      },
+      "energy_car2": {
+        "name": "Énergie droite"
+      }
+    },
+    "binary_sensor": {
+      "car1_connected": {
+        "name": "Connecté gauche"
+      },
+      "car2_connected": {
+        "name": "Connecté droite"
+      },
+      "car1_charging": {
+        "name": "En charge gauche"
+      },
+      "car2_charging": {
+        "name": "En charge droite"
+      }
+    },
+    "number": {
+      "max_current_total": {
+        "name": "Courant max total"
+      },
+      "max_current_car1": {
+        "name": "Courant max gauche"
+      },
+      "max_current_car2": {
+        "name": "Courant max droit"
+      }
+    },
+    "switch": {
+      "lock_side1": {
+        "name": "Verrouiller station gauche"
+      },
+      "lock_side2": {
+        "name": "Verrouiller station droite"
+      }
+    },
+    "select": {
+      "led_mode": {
+        "name": "Mode LED",
+        "state": {
+          "on": "Allumé",
+          "on_if_required": "Allumé si nécessaire",
+          "off": "Éteint"
+        }
+      }
+    }
+  }
+}
