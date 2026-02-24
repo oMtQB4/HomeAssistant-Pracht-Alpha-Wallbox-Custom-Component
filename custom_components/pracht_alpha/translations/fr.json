@@ -50,17 +50,33 @@
       "power_car1": {
         "name": "Puissance gauche"
       },
+      "power_car1_mono": {
+        "name": "Puissance"
+      },
       "power_car2": {
         "name": "Puissance droite"
       },
       "current_car1": {
         "name": "Courant gauche"
       },
+      "current_car1_mono": {
+        "name": "Courant"
+      },
       "current_car2": {
         "name": "Courant droit"
       },
       "status_car1": {
         "name": "État gauche",
+        "state": {
+          "disconnected": "Déconnecté",
+          "connected": "Connecté",
+          "charging": "En charge",
+          "charging_with_cooling": "En charge avec refroidissement",
+          "error": "Erreur"
+        }
+      },
+      "status_car1_mono": {
+        "name": "État",
         "state": {
           "disconnected": "Déconnecté",
           "connected": "Connecté",
@@ -91,6 +107,9 @@
       "energy_car1": {
         "name": "Énergie gauche"
       },
+      "energy_car1_mono": {
+        "name": "Énergie"
+      },
       "energy_car2": {
         "name": "Énergie droite"
       }
@@ -99,11 +118,17 @@
       "car1_connected": {
         "name": "Connecté gauche"
       },
+      "car1_connected_mono": {
+        "name": "Connecté"
+      },
       "car2_connected": {
         "name": "Connecté droite"
       },
       "car1_charging": {
         "name": "En charge gauche"
+      },
+      "car1_charging_mono": {
+        "name": "En charge"
       },
       "car2_charging": {
         "name": "En charge droite"
@@ -116,6 +141,9 @@
       "max_current_car1": {
         "name": "Courant max gauche"
       },
+      "max_current_car1_mono": {
+        "name": "Courant max"
+      },
       "max_current_car2": {
         "name": "Courant max droit"
       }
@@ -123,6 +151,9 @@
     "switch": {
       "lock_side1": {
         "name": "Verrouiller station gauche"
+      },
+      "lock_side1_mono": {
+        "name": "Verrouiller station"
       },
       "lock_side2": {
         "name": "Verrouiller station droite"

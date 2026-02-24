@@ -50,17 +50,33 @@
       "power_car1": {
         "name": "Potencia izquierda"
       },
+      "power_car1_mono": {
+        "name": "Potencia"
+      },
       "power_car2": {
         "name": "Potencia derecha"
       },
       "current_car1": {
         "name": "Corriente izquierda"
       },
+      "current_car1_mono": {
+        "name": "Corriente"
+      },
       "current_car2": {
         "name": "Corriente derecha"
       },
       "status_car1": {
         "name": "Estado izquierda",
+        "state": {
+          "disconnected": "Desconectado",
+          "connected": "Conectado",
+          "charging": "Cargando",
+          "charging_with_cooling": "Cargando con refrigeración",
+          "error": "Error"
+        }
+      },
+      "status_car1_mono": {
+        "name": "Estado",
         "state": {
           "disconnected": "Desconectado",
           "connected": "Conectado",
@@ -91,6 +107,9 @@
       "energy_car1": {
         "name": "Energía izquierda"
       },
+      "energy_car1_mono": {
+        "name": "Energía"
+      },
       "energy_car2": {
         "name": "Energía derecha"
       }
@@ -99,11 +118,17 @@
       "car1_connected": {
         "name": "Conectado izquierda"
       },
+      "car1_connected_mono": {
+        "name": "Conectado"
+      },
       "car2_connected": {
         "name": "Conectado derecha"
       },
       "car1_charging": {
         "name": "Cargando izquierda"
+      },
+      "car1_charging_mono": {
+        "name": "Cargando"
       },
       "car2_charging": {
         "name": "Cargando derecha"
@@ -116,6 +141,9 @@
       "max_current_car1": {
         "name": "Corriente máxima izquierda"
       },
+      "max_current_car1_mono": {
+        "name": "Corriente máxima"
+      },
       "max_current_car2": {
         "name": "Corriente máxima derecha"
       }
@@ -123,6 +151,9 @@
     "switch": {
       "lock_side1": {
         "name": "Bloquear estación izquierda"
+      },
+      "lock_side1_mono": {
+        "name": "Bloquear estación"
       },
       "lock_side2": {
         "name": "Bloquear estación derecha"

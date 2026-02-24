@@ -50,17 +50,33 @@
       "power_car1": {
         "name": "Potenza sinistra"
       },
+      "power_car1_mono": {
+        "name": "Potenza"
+      },
       "power_car2": {
         "name": "Potenza destra"
       },
       "current_car1": {
         "name": "Corrente sinistra"
       },
+      "current_car1_mono": {
+        "name": "Corrente"
+      },
       "current_car2": {
         "name": "Corrente destra"
       },
       "status_car1": {
         "name": "Stato sinistra",
+        "state": {
+          "disconnected": "Disconnesso",
+          "connected": "Connesso",
+          "charging": "In carica",
+          "charging_with_cooling": "In carica con raffreddamento",
+          "error": "Errore"
+        }
+      },
+      "status_car1_mono": {
+        "name": "Stato",
         "state": {
           "disconnected": "Disconnesso",
           "connected": "Connesso",
@@ -91,6 +107,9 @@
       "energy_car1": {
         "name": "Energia sinistra"
       },
+      "energy_car1_mono": {
+        "name": "Energia"
+      },
       "energy_car2": {
         "name": "Energia destra"
       }
@@ -99,11 +118,17 @@
       "car1_connected": {
         "name": "Connesso sinistra"
       },
+      "car1_connected_mono": {
+        "name": "Connesso"
+      },
       "car2_connected": {
         "name": "Connesso destra"
       },
       "car1_charging": {
         "name": "In carica sinistra"
+      },
+      "car1_charging_mono": {
+        "name": "In carica"
       },
       "car2_charging": {
         "name": "In carica destra"
@@ -116,6 +141,9 @@
       "max_current_car1": {
         "name": "Corrente max sinistra"
       },
+      "max_current_car1_mono": {
+        "name": "Corrente max"
+      },
       "max_current_car2": {
         "name": "Corrente max destra"
       }
@@ -123,6 +151,9 @@
     "switch": {
       "lock_side1": {
         "name": "Blocca stazione sinistra"
+      },
+      "lock_side1_mono": {
+        "name": "Blocca stazione"
       },
       "lock_side2": {
         "name": "Blocca stazione destra"

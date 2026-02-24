@@ -50,17 +50,33 @@
       "power_car1": {
         "name": "Leistung links"
       },
+      "power_car1_mono": {
+        "name": "Leistung"
+      },
       "power_car2": {
         "name": "Leistung rechts"
       },
       "current_car1": {
         "name": "Strom links"
       },
+      "current_car1_mono": {
+        "name": "Strom"
+      },
       "current_car2": {
         "name": "Strom rechts"
       },
       "status_car1": {
         "name": "Status links",
+        "state": {
+          "disconnected": "Getrennt",
+          "connected": "Verbunden",
+          "charging": "Laden",
+          "charging_with_cooling": "Laden mit Kühlung",
+          "error": "Fehler"
+        }
+      },
+      "status_car1_mono": {
+        "name": "Status",
         "state": {
           "disconnected": "Getrennt",
           "connected": "Verbunden",
@@ -91,6 +107,9 @@
       "energy_car1": {
         "name": "Energie links"
       },
+      "energy_car1_mono": {
+        "name": "Energie"
+      },
       "energy_car2": {
         "name": "Energie rechts"
       }
@@ -99,11 +118,17 @@
       "car1_connected": {
         "name": "Verbunden links"
       },
+      "car1_connected_mono": {
+        "name": "Verbunden"
+      },
       "car2_connected": {
         "name": "Verbunden rechts"
       },
       "car1_charging": {
         "name": "Laden links"
+      },
+      "car1_charging_mono": {
+        "name": "Laden"
       },
       "car2_charging": {
         "name": "Laden rechts"
@@ -111,18 +136,24 @@
     },
     "number": {
       "max_current_total": {
-        "name": "Maximaler Strom gesamt"
+        "name": "Max. Strom gesamt"
       },
       "max_current_car1": {
-        "name": "Maximaler Strom links"
+        "name": "Max. Strom links"
+      },
+      "max_current_car1_mono": {
+        "name": "Max. Strom"
       },
       "max_current_car2": {
-        "name": "Maximaler Strom rechts"
+        "name": "Max. Strom rechts"
       }
     },
     "switch": {
       "lock_side1": {
         "name": "Station links sperren"
+      },
+      "lock_side1_mono": {
+        "name": "Station sperren"
       },
       "lock_side2": {
         "name": "Station rechts sperren"

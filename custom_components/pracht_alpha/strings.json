@@ -42,6 +42,12 @@
       "car1_connected": {
         "name": "Connected left"
       },
+      "car1_charging_mono": {
+        "name": "Charging"
+      },
+      "car1_connected_mono": {
+        "name": "Connected"
+      },
       "car2_charging": {
         "name": "Charging right"
       },
@@ -52,6 +58,9 @@
     "number": {
       "max_current_car1": {
         "name": "Max current left"
+      },
+      "max_current_car1_mono": {
+        "name": "Max current"
       },
       "max_current_car2": {
         "name": "Max current right"
@@ -80,11 +89,17 @@
       "current_car1": {
         "name": "Current left"
       },
+      "current_car1_mono": {
+        "name": "Current"
+      },
       "current_car2": {
         "name": "Current right"
       },
       "energy_car1": {
         "name": "Energy left"
+      },
+      "energy_car1_mono": {
+        "name": "Energy"
       },
       "energy_car2": {
         "name": "Energy right"
@@ -92,11 +107,24 @@
       "power_car1": {
         "name": "Power left"
       },
+      "power_car1_mono": {
+        "name": "Power"
+      },
       "power_car2": {
         "name": "Power right"
       },
       "status_car1": {
         "name": "Status left",
+        "state": {
+          "charging": "Charging",
+          "charging_with_cooling": "Charging with cooling",
+          "connected": "Connected",
+          "disconnected": "Disconnected",
+          "error": "Error"
+        }
+      },
+      "status_car1_mono": {
+        "name": "Status",
         "state": {
           "charging": "Charging",
           "charging_with_cooling": "Charging with cooling",
@@ -122,6 +150,9 @@
     "switch": {
       "lock_side1": {
         "name": "Lock station left"
+      },
+      "lock_side1_mono": {
+        "name": "Lock station"
       },
       "lock_side2": {
         "name": "Lock station right"

@@ -53,6 +53,8 @@ class PrachtAlphaData:
     current_setting_input_lead: int
     energy_car1: float | None
     energy_car2: float | None
+    sw_version_main_pcb: int
+    sw_version_modbus_rfid: int
 
 
 @dataclass
@@ -100,6 +102,8 @@ def _parse_all_data(data: dict[str, Any]) -> PrachtAlphaData:
         current_setting_input_lead=data.get("CurrentSettingInputLead", 0),
         energy_car1=data.get("EnergyCar1"),
         energy_car2=data.get("EnergyCar2"),
+        sw_version_main_pcb=data.get("SwVersionMainPcb", 0),
+        sw_version_modbus_rfid=data.get("SwVersionModbusRfidModule", 0),
     )
 
 
@@ -176,7 +180,7 @@ class PrachtAlphaApi:
             raise PrachtAlphaError(f"API error {resp.status}: {text}")
         try:
             return await resp.json(content_type=None)
-        except ValueError, aiohttp.ContentTypeError:
+        except (ValueError, aiohttp.ContentTypeError):
             return await resp.text()
 
     async def _do_login(self, password: str) -> str:
