@@ -1,11 +1,12 @@
 {
   "domain": "pracht_alpha",
   "name": "Pracht Alpha",
-  "codeowners": [],
+  "codeowners": [ "@oMtQB4" ],
   "config_flow": true,
-  "documentation": "https://www.pracht.com",
+  "documentation": "https://raw.githubusercontent.com/oMtQB4/HomeAssistant-Pracht-Alpha-Wallbox-Custom-Component/refs/heads/main/README.md",
   "integration_type": "device",
   "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/oMtQB4/HomeAssistant-Pracht-Alpha-Wallbox-Custom-Component/issues",
   "version": "1.0.0",
   "zeroconf": [{ "name": "alpha-webserver*", "type": "_http._tcp.local." }]
 }
