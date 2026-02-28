@@ -9,7 +9,7 @@
   "integration_type": "device",
   "iot_class": "local_polling",
   "issue_tracker": "https://github.com/oMtQB4/HomeAssistant-Pracht-Alpha-Wallbox-Custom-Component/issues",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "zeroconf": [
     {
       "name": "alpha-webserver*",
