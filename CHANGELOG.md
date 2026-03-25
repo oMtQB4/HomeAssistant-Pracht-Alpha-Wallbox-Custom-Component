@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/oMtQB4/HomeAssistant-Pracht-Alpha-Wallbox-Custom-Component/compare/v1.1.1...v1.1.2) (2026-03-25)
+
+
+### Bug Fixes
+
+* expanded README with comprehensive usage and installation instructions ([dfb4144](https://github.com/oMtQB4/HomeAssistant-Pracht-Alpha-Wallbox-Custom-Component/commit/dfb4144dc035dce0d6253b79565577de7abcc28e))
+
 ## [1.1.1](https://github.com/oMtQB4/HomeAssistant-Pracht-Alpha-Wallbox-Custom-Component/compare/v1.1.0...v1.1.1) (2026-02-28)
 
 
